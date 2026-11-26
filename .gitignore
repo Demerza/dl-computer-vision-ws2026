@@ -1,0 +1,8 @@
+# Daten und Gewichte werden nicht eingecheckt (siehe README: prepare_gtsrb.py laedt den Datensatz)
+data/
+.venv/
+__pycache__/
+*.pt
+*.pth
+*.log
+runs/**/log.txt

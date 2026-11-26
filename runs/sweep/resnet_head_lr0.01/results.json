@@ -1,0 +1,32 @@
+{
+  "name": "sweep/resnet_head_lr0.01",
+  "args": {
+    "name": "sweep/resnet_head_lr0.01",
+    "model": "resnet50",
+    "mode": "head",
+    "rank": 8,
+    "alpha": null,
+    "targets": "qkv",
+    "lora_dropout": 0.05,
+    "epochs": 3,
+    "lr": 0.01,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "seed": 0,
+    "data": "data/gtsrb_224",
+    "out": "runs",
+    "workers": 12,
+    "subset": 0,
+    "no_test": true
+  },
+  "trainable_params": 88107,
+  "total_params": 23596139,
+  "train_images": 31379,
+  "epochs": 3,
+  "train_seconds_total": 39.43278956413269,
+  "train_seconds_per_epoch": 13.14426318804423,
+  "peak_gpu_gb": 1.645059585571289,
+  "best_epoch": 3,
+  "best_val_acc": 0.7545338441890166,
+  "best_val_macro_f1": 0.6330346949829861
+}

@@ -1,0 +1,32 @@
+{
+  "name": "sweep/vit_full_lr1e-05",
+  "args": {
+    "name": "sweep/vit_full_lr1e-05",
+    "model": "vit_base_patch16_224",
+    "mode": "full",
+    "rank": 8,
+    "alpha": null,
+    "targets": "qkv",
+    "lora_dropout": 0.05,
+    "epochs": 3,
+    "lr": 1e-05,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "seed": 0,
+    "data": "data/gtsrb_224",
+    "out": "runs",
+    "workers": 12,
+    "subset": 0,
+    "no_test": true
+  },
+  "trainable_params": 85831723,
+  "total_params": 85831723,
+  "train_images": 31379,
+  "epochs": 3,
+  "train_seconds_total": 206.92499494552612,
+  "train_seconds_per_epoch": 68.97499831517537,
+  "peak_gpu_gb": 9.522284507751465,
+  "best_epoch": 3,
+  "best_val_acc": 0.9822477650063857,
+  "best_val_macro_f1": 0.9726582135283854
+}

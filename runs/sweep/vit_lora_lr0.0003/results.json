@@ -1,0 +1,32 @@
+{
+  "name": "sweep/vit_lora_lr0.0003",
+  "args": {
+    "name": "sweep/vit_lora_lr0.0003",
+    "model": "vit_base_patch16_224",
+    "mode": "lora",
+    "rank": 8,
+    "alpha": null,
+    "targets": "qkv",
+    "lora_dropout": 0.05,
+    "epochs": 3,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "seed": 0,
+    "data": "data/gtsrb_224",
+    "out": "runs",
+    "workers": 12,
+    "subset": 0,
+    "no_test": true
+  },
+  "trainable_params": 327979,
+  "total_params": 86159702,
+  "train_images": 31379,
+  "epochs": 3,
+  "train_seconds_total": 169.7110767364502,
+  "train_seconds_per_epoch": 56.57035891215006,
+  "peak_gpu_gb": 6.694166660308838,
+  "best_epoch": 3,
+  "best_val_acc": 0.9831417624521073,
+  "best_val_macro_f1": 0.9755962351585069
+}

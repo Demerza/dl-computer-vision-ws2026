@@ -1,0 +1,7 @@
+{
+  "vit_head": 0.01,
+  "vit_lora": 0.002,
+  "vit_full": 0.0001,
+  "resnet_head": 0.01,
+  "resnet_full": 0.001
+}
