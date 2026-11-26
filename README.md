@@ -64,7 +64,8 @@ Voraussetzungen: Python 3.12, eine NVIDIA-Grafikkarte mit mindestens 12 GB Speic
 
 ```
 python -m venv .venv
-.venv/bin/pip install -r requirements.txt
+source .venv/bin/activate
+pip install -r requirements.txt
 
 python prepare_gtsrb.py data/gtsrb                    # lädt etwa 360 MB, 1 Minute
 python resize_224.py data/gtsrb data/gtsrb_224 224    # erzeugt 2,1 GB
@@ -73,6 +74,8 @@ python run_station1.py                                # Lernraten-Suche und Haup
 python run_station1_extra.py                          # etwa 1 Stunde
 python run_station1_plus.py                           # etwa 3,5 Stunden
 ```
+
+Die Startskripte überspringen jeden Lauf, zu dem es in `runs/` schon eine `results.json` gibt. Weil die Ergebnisse im Repository liegen, wird sonst nichts neu trainiert. Zum Nachrechnen den Ordner deshalb vorher umbenennen.
 
 Ein einzelner Lauf, zum Beispiel LoRA mit Rang 8:
 
